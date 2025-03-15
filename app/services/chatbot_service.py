@@ -1,5 +1,6 @@
 from transformers import pipeline
 
+# Modelo NER
 ner_pipeline = pipeline("ner", 
                         model = "bertin-project/bertin-roberta-base-spanish", 
                         aggregation_strategy="simple")
