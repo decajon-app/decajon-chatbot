@@ -7,10 +7,7 @@ ner_pipeline = pipeline("ner",
 
 # INTENTS
 INTENTS = {
-    "añade": "add_song",
-    "agrega": "add_song",
-    "canciones pendientes": "list_pending_rehearsals",
-    "ensayo pendiente": "list_pending_rehearsals"
+    "agregar_cancion_a_grupo": ["agregar", "añadir", "poner", "incorporar", "agregar canción"],
 }
 
 # Detecar el intent basado en palabras clave

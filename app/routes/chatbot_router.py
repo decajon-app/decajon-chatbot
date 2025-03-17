@@ -4,7 +4,11 @@ from app.models.chatbot_request import Request
 
 chatbot_router = APIRouter()
 
-@chatbot_router.get("/chatbot")
+@chatbot_router.get("/health")
+def health():
+    return "OK"
+
+@chatbot_router.post("/chatbot")
 def chatbot(request: Request):
     result = process_command(request.command)
     return result
